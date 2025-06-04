@@ -32,8 +32,14 @@ li{
 .text-burnt--orange{
     color: #F06C2B;
 }
+.text-white { 
+    color: #FFEFBD
+}
+.emphasize-text { 
+    text-shadow: 0 0 10px #FFEFBD;
+}
 section:nth-child(odd){
-    background-color: #C0D9E2;
+    background-color: #A3A153;
 }
 .business-title{ 
     font-size: 1.5rem;
@@ -41,7 +47,7 @@ section:nth-child(odd){
 
 }
 section { 
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -143,6 +149,13 @@ h1 {
     font-weight: 700;
     margin-bottom: 16px;
 }
+.background-img { 
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 /* SERVICES SECTION */
 .services-info--container{ 
     width: 100%;
@@ -160,6 +173,7 @@ h1 {
     align-items: left;
     margin: 8px 0;
 }
+
 /* CLEANING SECTION */
 .cleaning-img--container {
     width: 100%;
@@ -170,7 +184,7 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #C0D9E2;
+    background-color: #705142;
 
 }
 .cleaning-img1 {
@@ -244,4 +258,46 @@ h1 {
     margin: 0;
     margin-left: 24px;
 }
-
+/* FAQS SECTION */
+.faqs-info--container{ 
+    width: 100%;
+    max-width: 1200px;
+    padding: 24px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0;
+}
+.faqs-section--container{ 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown { 
+    position: relative;
+    display: inline-block;
+    margin: 16px 0;
+}
+.dropdown-content { 
+    display: none;
+    position: absolute;
+    background-color: #A3A153;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 12px;
+}.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-btn{ 
+    background-color:#2E438B;
+    color: white;
+    padding: 8px 50px;
+    border-radius: 50px;
+    transition: all 300ms ease;
+    font-size: 1.2rem;
+}
